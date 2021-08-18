@@ -156,6 +156,7 @@ header {
 
 .slider {
     margin-bottom: 85px;
+    position: relative;
 }
 
 .slider-item > .wrapper {
@@ -183,6 +184,32 @@ header {
 .slider-item > .wrapper > .btn{
     margin-top: 30px;
 }
+
+
+/* SLICK */
+.slick-dots {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+}
+
+.slick-dots > li > button {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: none;
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 0;
+    margin-right: 10px;
+    opacity: 0.7;
+}
+
+.slick-dots > .slick-active > button {
+    background-color: #000;
+}
+
 /* //HEADER */
 
 /* REVIEW */
@@ -211,6 +238,10 @@ header {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
     margin-bottom: 15px;
+}
+
+.recipe-review__item:hover {
+    opacity: 0.9;
 }
 
 .review-descr__time::before {
@@ -254,6 +285,29 @@ main {
 .view-img {
     width: 50%;
     height: 441px;
+    position: relative;
+}
+
+.view-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.view-img::before {
+    content: "\e927";
+    font-family: 'icomoon' !important;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 60px;
+    background-color: #000;
+    opacity: 0.8;
+    right: 20px;
 }
 
 .view-content {
@@ -340,8 +394,21 @@ main {
     clear: both;
     margin-top: 100px;
     max-height: 230px;
-    overflow-y: scroll;   
+    overflow-y: scroll;  
+    padding-right: 10px; 
 }
+
+.view-text::-webkit-scrollbar {
+    width: 3px;
+}
+.view-text::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #c2c2c2;
+}
+.view-text::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.8);
+}
+
 
 .view-text > h3 {
     margin-top: 20px;

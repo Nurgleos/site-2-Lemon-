@@ -1,3 +1,12 @@
+$(document).ready(function () {
+    $('.slider').slick({
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: false,
+    });
+});
+
 const diff = document.querySelector('.view-title').querySelector('.difficulty');
 
 const diffParam = {
@@ -16,3 +25,5 @@ if (diffLevel) {
     }
 
 }
+
+
